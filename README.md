@@ -8,6 +8,7 @@ This is a **portfolio website** built with **React.js**, **Tailwind CSS**, and *
 - **Tailwind CSS** (Utility-first styling)  
 - **GSAP** (GreenSock Animation Platform for animations)  
 - **React Router DOM** (Client-side routing, if used)
+- **React Icons** 
 
 ## 📂 Folder Structure
 
