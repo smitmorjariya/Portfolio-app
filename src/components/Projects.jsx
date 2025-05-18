@@ -9,7 +9,7 @@ const Projects = () => {
             title: "Portfolio Website",
             description: "A modern portfolio website built with React and Tailwind CSS.",
             link: "https://example.com",
-            technologies: ["React", "React-icons", "Tailwind CSS", "Responsive Design" ],
+            technologies: ["React", "React-icons", "Tailwind CSS", "Responsive Design", "GSAP" ],
         },
         
         {
