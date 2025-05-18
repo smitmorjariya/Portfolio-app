@@ -31,7 +31,7 @@ const Navbar = () => {
                         <ul className="flex space-x-8 ml-20">
                             <li>
                                 <a
-                                    href=""
+                                    href="#home"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
          after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-16"
                                 >
@@ -40,7 +40,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="#about"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
          after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-16"
                                 >
@@ -49,25 +49,17 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="#skills"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
          after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-13"
                                 >
                                     Skills
                                 </a>
                             </li>
-                            {/* <li>
-                                    <a
-                                        href=""
-                                        className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
-         after:absolute after:left-0 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-full"
-                                    >
-                                        Tracer
-                                    </a>
-                                </li> */}
+
                             <li>
                                 <a
-                                    href=""
+                                    href="#certification"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
              after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-29.5"
                                 >
@@ -76,7 +68,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="#projects"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
          after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-20 "
                                 >
@@ -85,7 +77,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href=""
+                                    href="#contact"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in hover:scale-105 transform after:absolute after:left-2  after:bottom-1.5 after:h-0.5 after:w-0 after:bg-green-500 after:transition-all after:duration-200 hover:after:w-26 hover:bg-white/30 hover:text-white"
                                 >
                                     Contact Us
