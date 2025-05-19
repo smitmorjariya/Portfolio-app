@@ -92,7 +92,7 @@ const Loader = () => {
         transition: "background-color 0.8s ease",
       }}
     >
-      <h1 style={{ fontSize: "3rem", whiteSpace: "nowrap" }}>
+      <h1 style={{ fontSize: "4rem", whiteSpace: "nowrap" }}>
         {typedName}
         <span className="cursor"></span>
       </h1>
@@ -105,6 +105,8 @@ const Loader = () => {
         .cursor {
           display: inline-block;
           width: 1ch;
+          height: 1.5em;
+          fontFamily: 'Courier New', Courier, monospace;
           animation: typing 1s steps(2, start) infinite;
           color: white;
         }
