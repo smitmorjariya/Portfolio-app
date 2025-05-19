@@ -49,7 +49,7 @@ const Navbar = () => {
                             </li>
                             <li>
                                 <a
-                                    href="#skills"
+                                    href="#skill"
                                     className="relative inline-block px-3 py-2 text-xl font-medium text-white rounded-md transition-all duration-300 delay-150 ease-in-out hover:text-teal-400 hover:scale-105 transform
          after:absolute after:left-2 after:bottom-1.5 after:h-0.5 after:w-0 after:bg-yellow-500 after:transition-all after:duration-300 hover:after:w-13"
                                 >

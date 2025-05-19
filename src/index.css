@@ -5,31 +5,3 @@ body {
   background: #000;
 }
 
-
-@keyframes glowPulse {
-
-  0%,
-  100% {
-    opacity: 0.2;
-    transform: scale(1);
-  }
-
-  50% {
-    opacity: 0.4;
-    transform: scale(1.1);
-  }
-}
-
-@keyframes spinSlow {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-.animate-spin-slow {
-  animation: spinSlow 8s linear infinite;
-}

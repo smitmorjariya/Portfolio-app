@@ -9,45 +9,45 @@ const Projects = () => {
             title: "Portfolio Website",
             description: "A modern portfolio website built with React and Tailwind CSS.",
             link: "https://example.com",
-            technologies: ["React", "React-icons", "Tailwind CSS", "Responsive Design", "GSAP" ],
+            technologies: ["React", "React-icons", "Tailwind CSS", "Responsive Design", "GSAP"],
         },
-        
+
+
         {
             id: 2,
+            title: "Task Manager",
+            description: "A task management app with user authentication and real-time updates.",
+
+            link: "https://example.com",
+            technologies: ["React", "Node.js", "MongoDB", "Express", "Responsive Design"],
+        },
+        {
+            id: 3,
             title: "Portfolio Website",
             description:
                 "A modern portfolio website built with React and Tailwind CSS.",
             link: "https://example.com",
             technologies: ["React", "Tailwind CSS", "React-icons", "Responsive Design"],
         },
-        {
-            id: 3,
-            title: "Task Manager",
-            description: "A task management app with user authentication and real-time updates.",
-            
-            link: "https://example.com",
-            technologies: ["React", "Node.js", "MongoDB", "Express", "Responsive Design"],
-        },
-
     ];
 
     return (
-        <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 py-16">
+        <div className="min-h  bg-gradient-to-b from-white to-gray-50 ">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
                         My Projects
                     </h2>
-                    <p className="mt-4 text-xl text-center text-gray-600 font-semibold">
+                    <p className="mt-5 text-xl text-center text-gray-600 font-semibold">
                         A showcase of all projects that I have made
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-col-2 lg:grid-cols-3 gap-10 pt-5">
                     {projects.map((project, index) => (
                         <div
                             key={project.id}
-                            className="bg-white rounded-xl shadow-lg hover:shadow-xl hover:border-2 hover:border-indigo-500 transition-all duration-200 p-5"
+                            className="bg-white rounded-xl shadow-lg hover:shadow-xl hover:border-2 hover:border-indigo-500 transition-shadow duration-200 p-5"
                         >
                             <h2 className="text-2xl font-semibold text-gray-800 mb-5">
                                 {project.title}
@@ -66,7 +66,7 @@ const Projects = () => {
                             <a
                                 href={project.link}
                                 target="_blank"
-                                className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
+                                className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                             >
                                 View Project
                                 <HiExternalLink className="w-4 h-4 ml-2" />
