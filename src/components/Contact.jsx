@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
                 {/* Contact Form */}
 
-                <div className="max-w-2xl mx-auto bg-white p-5 rounded-2xl shadow-2xl ">
+                <div className="max-w-2xl mx-auto bg-white p-7 rounded-2xl shadow-2xl ">
                 
                     <form onSubmit={handleSubmit} className="space-y-6 ">
                         <div>

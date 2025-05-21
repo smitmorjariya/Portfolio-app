@@ -1,8 +1,19 @@
 import React from 'react';
+import { useEffect } from "react";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiMongodb, SiGreensock } from "react-icons/si"; // GSAP added here
+import AOS from "aos";
+import "aos/dist/aos.css"
 
 const About = () => {
+
+
+    useEffect(() => {
+        AOS.init({ once: true, duration: 500 });
+    }, []);
+
     return (
         <div id="about" className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50">
             <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -31,22 +42,60 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Professional Journey */}
-                <div className="bg-white shadow-md mt-16 p-2 sm:p-8 rounded-md text-center">
-                    <h1 className="text-3xl sm:text-5xl font-semibold mb-8 sm:mb-10 bg-gradient-to-r from-indigo-600 via-purple-500 to-teal-500 text-transparent bg-clip-text">
-                        Professional Journey
-                    </h1>
-                    <div className="space-y-6 text-left max-w-4xl mx-auto">
-                        <p className="text-lg text-gray-600">
-                            I started my journey in web development back in 2018, working with startups and enterprise clients. My expertise spans the entire web stack—from crafting pixel-perfect UIs to architecting scalable backend systems.
-                        </p>
-                        <p className="text-lg text-gray-600">
-                            Currently, I focus on building modern web applications using React, Node.js, and cloud technologies. I aim to create solutions that not only look great but also perform exceptionally well.
-                        </p>
+                {/* Timeline container */}
+                <div>
+                    <h2 className="text-4xl font-bold text-center mt-20 mb-8 bg-gradient-to-l from-indigo-600 via-purple-500 to-teal-500 text-transparent bg-clip-text">
+                        My Journey
+                    </h2>
+                </div>
+                <div className="relative mt-16 min-h-[600px]">
+                    {/* Vertical center line */}
+                    <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-1 lg:h-145 h-240 bg-gradient-to-b from-indigo-500 via-purple-500 to-teal-500 rounded-full"></div>
+
+                    {/* Timeline items */}
+                    <div className="space-y-20 relative z-10">
+                        {/* Timeline item - Left side */}
+                        <div className="flex items-center justify-start w-full">
+                            <div className="w-1/2 pr-6 text-right">
+                                <div className="inline-block bg-gradient-to-r from-sky-100 to-gray-50/20 border-l-4 border-sky-400 p-4 rounded-lg shadow-md text-left ml-auto max-w-[90%] hover:shadow-2xl transition duration-200">
+
+                                    <h3 className="text-xl font-bold text-sky-700">Full Stack Web Development Intern <br /> @ Zidio Development <br /> (Feb, 2025 - May, 2025)</h3>
+                                    <h4 className="font-bold text-green-800">3 Months, Remote</h4>
+                                    <p className="mt-2 text-gray-600 text-justify"> Developed a full-stack Task Managment web application, using the MERN stack, enhancing my skills in React, Node.js, and MongoDB. Collaborated with a team to deliver a responsive and user-friendly interface.</p>
+
+                                </div>
+                            </div>
+                            <div className="w-1/2 relative">
+                                {/* Dot on the timeline line */}
+                                <div className="absolute top-1/2 left-0 transform -translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-indigo-500 border-4 border-white"></div>
+                            </div>
+                        </div>
+
+                        {/* Timeline item - Right side */}
+                        <div className="flex items-center justify-end w-full">
+                            <div className="w-1/2 relative">
+                                {/* Dot on the timeline line */}
+                                <div className="absolute top-1/2 right-0 transform translate-x-1/2 -translate-y-1/2 w-5 h-5 rounded-full bg-teal-500 border-4 border-white"></div>
+                            </div>
+                            <div className="w-1/2 pl-6 text-left">
+                                <div className="inline-block bg-gradient-to-l from-teal-100 to-white border-r-4 border-teal-400 p-4 rounded-lg shadow-md text-left max-w-[90%] hover:shadow-2xl transition duration-200">
+                                    <h3 className="text-xl font-bold text-teal-700">Frontend Development Intern <br /> @ OctaNet Service Pvt. Ltd. <br /> (June, 2024 - July, 2024)</h3>
+                                    <h4 className="font-bold text-sky-700">1 Months, Remote</h4>
+                                    <p className="mt-2 text-gray-600 text-justify">Created a landing page and to-do list while strengthening HTML, CSS, JavaScript, and Tailwind CSS skills.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Add more timeline items alternating left/right as needed */}
                     </div>
                 </div>
 
+
+
                 {/* Skills Section */}
+                <h2 className="text-4xl font-bold text-center mt-20 bg-gradient-to-l from-indigo-600 via-purple-500 to-teal-500 text-transparent bg-clip-text">
+                    Skills Learned
+                </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-16">
                     <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition duration-200">
                         <h1 className="text-4xl font-bold py-2 bg-gradient-to-r from-indigo-600 via-purple-500 to-teal-500 text-transparent bg-clip-text">
@@ -58,7 +107,7 @@ const About = () => {
                     </div>
 
                     <div className="p-6 bg-white rounded-xl shadow-md hover:shadow-xl transition duration-200">
-                        <h2 className="text-3xl font-semibold mb-6 text-indigo-600">Skills</h2>
+                        <h2 className="text-3xl font-semibold mb-6 text-indigo-600">My Skills</h2>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8 text-gray-800 text-lg">
                             <div className="flex items-center gap-3"><FaHtml5 className="text-orange-600" size={24} /> HTML5</div>
                             <div className="flex items-center gap-3"><FaCss3Alt className="text-blue-600" size={24} /> CSS3</div>
@@ -76,19 +125,44 @@ const About = () => {
                 </div>
 
                 {/* Professional Interests */}
-                <div className="bg-white p-8 shadow-lg mb-16">
-                    <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">Beyond Coding</h2>
+                <div className="bg-white p-8 shadow-lg mb-16 rounded-xl">
+                    <h2 className="text-3xl font-semibold mb-8 text-center text-gray-800">
+                        Beyond Coding
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-                        <div className="space-y-3">
-                            <h3 className="text-2xl text-indigo-700 font-semibold">Open Source Contribution</h3>
-                            <p className="text-lg text-gray-800">I actively contribute to open source projects on GitHub.</p>
+
+                        <div
+                            className="space-y-3"
+                            data-aos="fade-up"
+                            data-aos-delay="100"
+                        >
+                            <h3 className="text-2xl text-indigo-700 font-semibold">
+                                MERN Stack Mastery
+                            </h3>
+                            <p className="text-lg text-gray-800">
+                                I'm actively developing full-stack applications using MongoDB,
+                                Express.js, React, and Node.js. My focus includes implementing
+                                authentication, REST APIs, and real-time features like chat.
+                            </p>
                         </div>
-                        <div className="space-y-3">
-                            <h3 className="text-2xl text-indigo-700 font-semibold">Community Engagement</h3>
-                            <p className="text-lg text-gray-800">I enjoy sharing knowledge, mentoring juniors, and speaking at developer events.</p>
+
+                        <div
+                            className="space-y-3"
+                            data-aos="fade-up"
+                            data-aos-delay="300"
+                        >
+                            <h3 className="text-2xl text-indigo-700 font-semibold">
+                                Leveling Up
+                            </h3>
+                            <p className="text-lg text-gray-800">
+                                I’m continuously improving my skills in full-stack development and exploring new technologies to build efficient and scalable applications.
+                            </p>
+
                         </div>
+
                     </div>
                 </div>
+
 
                 {/* Call to Action */}
                 <div className="bg-gradient-to-r from-indigo-600 via-purple-500 to-teal-500 text-white py-12 rounded-xl text-center">
