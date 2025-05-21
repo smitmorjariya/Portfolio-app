@@ -30,9 +30,9 @@ const Contact = () => {
         });
     };
     return (
-        <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50 pt-15 ">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ">
-                <div className="text-center mb-18 pt-5">
+        <div className="min-h-screen w-full bg-gradient-to-b from-white to-gray-50  ">
+            <div className="max-w-7xl mx-auto p-4 sm:px-6 lg:px-8 ">
+                <div className="text-center pb-10 pt-5">
                     <h2 className="text-4xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-600 bg-clip-text text-transparent ">
                         Contact Us
                     </h2>
@@ -42,7 +42,7 @@ const Contact = () => {
                 </div>
                 {/* Contact Form */}
 
-                <div className="max-w-2xl mx-auto bg-white p-8 rounded-2xl shadow-2xl">
+                <div className="max-w-2xl mx-auto bg-white p-5 rounded-2xl shadow-2xl ">
                 
                     <form onSubmit={handleSubmit} className="space-y-6 ">
                         <div>
@@ -68,7 +68,7 @@ const Contact = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full hover:cursor-pointer hover:rounded-3xl transition-all duration-250 px-6 py-3 bg-gradient-to-r from-indigo-700 via-purple-700 to-teal-700 text-white font-semibold" >
+                            className="w-full hover:cursor-pointer hover:text-xl hover:rounded-3xl transition-all duration-250 px-6 py-3 bg-gradient-to-r from-indigo-700 via-purple-700 to-teal-700 text-white font-semibold" >
                             Sumbit
                         </button>
 

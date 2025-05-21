@@ -6,11 +6,11 @@ import AnimatedName from "../AnimateText/AnimatedName";
 
 function Footer() {
   return (
-    <footer className="w-full  bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center md:text-left">
-            {/* <h3 className="text-xl font-bold mb-4">John Doe</h3> */}
+    <footer className="w-full  bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-500 text-white ">
+      <div className="max-w-7xl mx-auto ">
+        <div className="grid grid-cols-1 md:grid-cols-3 pt-4.5 gap-8">
+          <div className="text-center md:text-left ">
+            {/* <h3 className="text-xl font-bold mb-4"></h3> */}
             <div className="flex items-center mb-4.5">
               <div className="flex-shrink-0">
                 <span className="text-2xl font-bold text-white bg-white/25 px-3.5 py-1 rounded-lg">
