@@ -65,12 +65,11 @@ const Projects = () => {
                                     </div>
                                 ))}
                             </div>
-                            <div className="gap-3">
-
+                            <div className="flex gap-6 pt-3">
                                 <a
                                     href={project.link}
                                     target="_blank"
-                                    className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
+                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                                 >
                                     Live Link
                                     <FaExternalLinkAlt className="w-4 h-4 ml-2" />
@@ -78,12 +77,13 @@ const Projects = () => {
                                 <a
                                     href={project.liveLink}
                                     target="_blank"
-                                    className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-200 font-semibold transition-all duration-200"
+                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-200 font-semibold transition-all duration-200"
                                 >
                                     View Project
-                                    <HiExternalLink className="w-4 h-4 -mr-2" />
+                                    <HiExternalLink className="w-4 h-4 ml-2" />
                                 </a>
                             </div>
+
                         </div>
                     ))}
                 </div>
