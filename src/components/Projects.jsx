@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import { HiExternalLink } from 'react-icons/hi'
 // import { LuExternalLink } from 'react-icons/lu'
 
@@ -8,17 +9,17 @@ const Projects = () => {
             id: 1,
             title: "Portfolio Website",
             description: "A modern portfolio website built with React and Tailwind CSS.",
-            link: "https://example.com",
-            technologies: ["React", "React-icons", "Tailwind CSS", "Responsive Design", "GSAP"],
+            link: "https://github.com/smitmorjariya/Portfolio-Website",
+            liveLink: "https://smitmorjariya.netlify.app/",
+            technologies: ["HTML", "CSS", "Tailwind CSS", "Responsive Design", "GSAP"],
         },
 
 
         {
             id: 2,
-            title: "Task Manager",
+            title: "TeamOrbit-Task Manager",
             description: "A task management app with user authentication and real-time updates.",
-
-            link: "https://example.com",
+            link: "https://github.com/smitmorjariya/TeamOrbit-Task-Manager-App",
             technologies: ["React", "Node.js", "MongoDB", "Express", "Responsive Design"],
         },
         {
@@ -26,7 +27,8 @@ const Projects = () => {
             title: "Portfolio Website",
             description:
                 "A modern portfolio website built with React and Tailwind CSS.",
-            link: "https://example.com",
+            link: "https://github.com/smitmorjariya/Portfolio-app",
+            liveLink: "https://smitmorjariya.vercel.app/",
             technologies: ["React", "Tailwind CSS", "React-icons", "Responsive Design"],
         },
     ];
@@ -65,6 +67,14 @@ const Projects = () => {
                             </div>
                             <a
                                 href={project.link}
+                                target="_blank"
+                                className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
+                            >
+                                Live Link
+                                <FaExternalLinkAlt className="w-4 h-4 ml-2" />
+                            </a>
+                             <a
+                                href={project.liveLink}
                                 target="_blank"
                                 className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                             >
