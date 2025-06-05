@@ -77,7 +77,7 @@ const Projects = () => {
                                 <a
                                     href={project.liveLink}
                                     target="_blank"
-                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-200 font-semibold transition-all duration-200"
+                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-300 font-semibold transition-all duration-200"
                                 >
                                     View Project
                                     <HiExternalLink className="w-4 h-4 ml-2" />
