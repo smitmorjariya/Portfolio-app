@@ -69,7 +69,7 @@ const Projects = () => {
                                 <a
                                     href={project.githubLink}
                                     target="_blank"
-                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
+                                    className="inline-flex items-center text-indigo-600 hover:text-indigo-400 font-semibold transition-all duration-200"
                                 >
                                     Live Link
                                     <FaExternalLinkAlt className="w-4 h-4 ml-2" />
