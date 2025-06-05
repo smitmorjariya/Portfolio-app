@@ -71,7 +71,7 @@ const Projects = () => {
                                 className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                             >
                                 Live Link
-                                <FaExternalLinkAlt className="w-4 h-4 ml-2" />
+                                <FaExternalLinkAlt className="w-4 h-4 ml-3" />
                             </a>
                              <a
                                 href={project.liveLink}
