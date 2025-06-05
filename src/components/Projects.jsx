@@ -34,7 +34,7 @@ const Projects = () => {
     ];
 
     return (
-        <div className="min-h  bg-gradient-to-b from-white to-gray-50 ">
+        <div className="min-h  bg-gradient-to-b from-white to-gray-50 " id='#projects' >
             <div className="max-w-7xl mx-auto pb-5 px-4 md:px-6 lg:px-8">
                 <div className="text-center  ">
                     <h2 className="text-4xl font-bold  bg-gradient-to-r from-indigo-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">
