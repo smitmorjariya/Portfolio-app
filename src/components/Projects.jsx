@@ -9,7 +9,7 @@ const Projects = () => {
             id: 1,
             title: "Portfolio Website",
             description: "A modern portfolio website built with React and Tailwind CSS.",
-            link: "https://github.com/smitmorjariya/Portfolio-Website",
+            githubLink: "https://github.com/smitmorjariya/Portfolio-Website",
             liveLink: "https://smitmorjariya.netlify.app/",
             technologies: ["HTML", "CSS", "Tailwind CSS", "Responsive Design", "GSAP"],
         },
@@ -19,7 +19,7 @@ const Projects = () => {
             id: 2,
             title: "TeamOrbit-Task Manager",
             description: "A task management app with user authentication and real-time updates.",
-            link: "https://github.com/smitmorjariya/TeamOrbit-Task-Manager-App",
+            githubLink: "https://github.com/smitmorjariya/TeamOrbit-Task-Manager-App",
             technologies: ["React", "Node.js", "MongoDB", "Express", "Responsive Design"],
         },
         {
@@ -27,7 +27,7 @@ const Projects = () => {
             title: "Portfolio Website",
             description:
                 "A modern portfolio website built with React and Tailwind CSS.",
-            link: "https://github.com/smitmorjariya/Portfolio-app",
+            githubLink: "https://github.com/smitmorjariya/Portfolio-app",
             liveLink: "https://smitmorjariya.vercel.app/",
             technologies: ["React", "Tailwind CSS", "React-icons", "Responsive Design"],
         },
@@ -67,7 +67,7 @@ const Projects = () => {
                             </div>
                             <div className="flex gap-6 pt-3">
                                 <a
-                                    href={project.link}
+                                    href={project.githubLink}
                                     target="_blank"
                                     className="inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                                 >
