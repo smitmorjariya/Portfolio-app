@@ -71,7 +71,7 @@ const Projects = () => {
                                 className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                             >
                                 Live Link
-                                <FaExternalLinkAlt className="w-4 h-4 ml-3" />
+                                <FaExternalLinkAlt className="w-4 h-4 ml-2" />
                             </a>
                              <a
                                 href={project.liveLink}
@@ -79,7 +79,7 @@ const Projects = () => {
                                 className="inline-flex pt-3 items-center text-indigo-600 hover:text-indigo-800 font-semibold transition-all duration-200"
                             >
                                 View Project
-                                <HiExternalLink className="w-4 h-4 ml-2" />
+                                <HiExternalLink className="w-4 h-4 mr-2" />
                             </a>
                         </div>
                     ))}
