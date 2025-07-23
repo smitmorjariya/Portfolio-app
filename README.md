@@ -12,7 +12,7 @@ This is a **portfolio website** built with **React.js**, **Tailwind CSS**, and *
 
 ## 📂 Folder Structure
 
-
+<img width="1024" height="1024" alt="Estructura de Proyecto React y Tailwind" src="https://github.com/user-attachments/assets/5ee436f1-7453-49a8-953e-23a739fc18e5" />
 
 
 ## 🎯 Key Features
